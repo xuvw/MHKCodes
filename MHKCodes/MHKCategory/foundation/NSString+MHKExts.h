@@ -15,4 +15,9 @@
 - (NSString *)encodeToPercentEscapeString: (NSString *) input;
 - (NSString *)decodeFromPercentEscapeString: (NSString *) input;
 
+- (NSString *)md5;
+
+- (NSString *)base64Encode;
+- (NSString *)base64Decode;
+
 @end
