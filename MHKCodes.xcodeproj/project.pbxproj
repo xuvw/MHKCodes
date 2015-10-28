@@ -10,10 +10,10 @@
 		503ACCED1BE121D200A7E945 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 503ACCEC1BE121D200A7E945 /* main.m */; };
 		503ACCF01BE121D300A7E945 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 503ACCEF1BE121D300A7E945 /* AppDelegate.m */; };
 		503ACCF31BE121D300A7E945 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 503ACCF21BE121D300A7E945 /* ViewController.m */; };
-		503ACCF61BE121D300A7E945 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 503ACCF41BE121D300A7E945 /* Main.storyboard */; };
 		503ACCF81BE121D300A7E945 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 503ACCF71BE121D300A7E945 /* Images.xcassets */; };
 		503ACCFB1BE121D300A7E945 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 503ACCF91BE121D300A7E945 /* LaunchScreen.xib */; };
 		503ACD071BE121D300A7E945 /* MHKCodesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 503ACD061BE121D300A7E945 /* MHKCodesTests.m */; };
+		503ACD111BE122C100A7E945 /* Memo in Resources */ = {isa = PBXBuildFile; fileRef = 503ACD101BE122C100A7E945 /* Memo */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,12 +34,12 @@
 		503ACCEF1BE121D300A7E945 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		503ACCF11BE121D300A7E945 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		503ACCF21BE121D300A7E945 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		503ACCF51BE121D300A7E945 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		503ACCF71BE121D300A7E945 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		503ACCFA1BE121D300A7E945 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		503ACD001BE121D300A7E945 /* MHKCodesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MHKCodesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		503ACD051BE121D300A7E945 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		503ACD061BE121D300A7E945 /* MHKCodesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHKCodesTests.m; sourceTree = "<group>"; };
+		503ACD101BE122C100A7E945 /* Memo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Memo; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +63,7 @@
 		503ACCDE1BE121D200A7E945 = {
 			isa = PBXGroup;
 			children = (
+				503ACD101BE122C100A7E945 /* Memo */,
 				503ACCE91BE121D200A7E945 /* MHKCodes */,
 				503ACD031BE121D300A7E945 /* MHKCodesTests */,
 				503ACCE81BE121D200A7E945 /* Products */,
@@ -85,7 +86,6 @@
 				503ACCEF1BE121D300A7E945 /* AppDelegate.m */,
 				503ACCF11BE121D300A7E945 /* ViewController.h */,
 				503ACCF21BE121D300A7E945 /* ViewController.m */,
-				503ACCF41BE121D300A7E945 /* Main.storyboard */,
 				503ACCF71BE121D300A7E945 /* Images.xcassets */,
 				503ACCF91BE121D300A7E945 /* LaunchScreen.xib */,
 				503ACCEA1BE121D200A7E945 /* Supporting Files */,
@@ -199,8 +199,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				503ACCF61BE121D300A7E945 /* Main.storyboard in Resources */,
 				503ACCFB1BE121D300A7E945 /* LaunchScreen.xib in Resources */,
+				503ACD111BE122C100A7E945 /* Memo in Resources */,
 				503ACCF81BE121D300A7E945 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,14 +244,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		503ACCF41BE121D300A7E945 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				503ACCF51BE121D300A7E945 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		503ACCF91BE121D300A7E945 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
