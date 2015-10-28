@@ -12,4 +12,7 @@
 
 + (NSDictionary *)dictionaryWithJsonString:(NSString *)JsonString;
 
+- (NSString *)encodeToPercentEscapeString: (NSString *) input;
+- (NSString *)decodeFromPercentEscapeString: (NSString *) input;
+
 @end

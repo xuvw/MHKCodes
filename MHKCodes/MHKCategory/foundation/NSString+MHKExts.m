@@ -34,4 +34,35 @@
     return JsonDic;
 }
 
+/*
+ 不会处理URL中的保留字，见：GTMNSString+URLArguments
+ [string stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+ [string stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+ */
+- (NSString *)encodeToPercentEscapeString: (NSString *) input
+{
+    NSString*
+    outputStr = (__bridge NSString *)CFURLCreateStringByAddingPercentEscapes(NULL, /* allocator */
+                                                                             (__bridge CFStringRef)input,
+                                                                             NULL, /* charactersToLeaveUnescaped */
+                                                                             (CFStringRef)@"!*'();:@&=+$,/?%#[]",
+                                                                             kCFStringEncodingUTF8);
+    
+    
+    return
+    outputStr;
+}
+- (NSString *)decodeFromPercentEscapeString: (NSString *) input
+{
+    NSMutableString *outputStr = [NSMutableString stringWithString:input];
+    [outputStr replaceOccurrencesOfString:@"+"
+                               withString:@" "
+                                  options:NSLiteralSearch
+                                    range:NSMakeRange(0,
+                                                      [outputStr length])];
+    
+    return
+    [outputStr stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+}
+
 @end
