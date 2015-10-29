@@ -64,6 +64,16 @@
     [outputStr stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
 }
 
+- (NSString *)subStringMatchPattern:(NSString *)pattern andTemplate:(NSString *)regexTemplate{
+    NSAssert([pattern length]>0 && [regexTemplate length]>0, @"param error");
+    
+    NSRegularExpression *regex =[NSRegularExpression regularExpressionWithPattern:pattern options:0 error:nil];
+    return [regex stringByReplacingMatchesInString:self
+                                           options:0
+                                             range:NSMakeRange(0, [self length])
+                                      withTemplate:regexTemplate];
+}
+
 - (NSString *)md5{
     const char *cStr = [self UTF8String];
     unsigned char result[16];

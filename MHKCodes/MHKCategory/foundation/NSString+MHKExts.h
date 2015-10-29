@@ -15,6 +15,8 @@
 - (NSString *)encodeToPercentEscapeString: (NSString *)input;
 - (NSString *)decodeFromPercentEscapeString: (NSString *)input;
 
+- (NSString *)subStringMatchPattern:(NSString *)pattern andTemplate:(NSString *)regexTemplate;
+
 /*
  支持数据长度:无限
  */
