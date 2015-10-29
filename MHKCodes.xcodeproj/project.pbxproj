@@ -15,6 +15,7 @@
 		503ACD071BE121D300A7E945 /* MHKCodesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 503ACD061BE121D300A7E945 /* MHKCodesTests.m */; };
 		503ACD111BE122C100A7E945 /* Memo in Resources */ = {isa = PBXBuildFile; fileRef = 503ACD101BE122C100A7E945 /* Memo */; };
 		503ACD161BE1251B00A7E945 /* NSString+MHKExts.m in Sources */ = {isa = PBXBuildFile; fileRef = 503ACD151BE1251B00A7E945 /* NSString+MHKExts.m */; };
+		503ACD191BE259D200A7E945 /* NSData+MHKExts.m in Sources */ = {isa = PBXBuildFile; fileRef = 503ACD181BE259D200A7E945 /* NSData+MHKExts.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		503ACD101BE122C100A7E945 /* Memo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Memo; sourceTree = "<group>"; };
 		503ACD141BE1251B00A7E945 /* NSString+MHKExts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MHKExts.h"; sourceTree = "<group>"; };
 		503ACD151BE1251B00A7E945 /* NSString+MHKExts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MHKExts.m"; sourceTree = "<group>"; };
+		503ACD171BE259D200A7E945 /* NSData+MHKExts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+MHKExts.h"; sourceTree = "<group>"; };
+		503ACD181BE259D200A7E945 /* NSData+MHKExts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+MHKExts.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +139,8 @@
 			children = (
 				503ACD141BE1251B00A7E945 /* NSString+MHKExts.h */,
 				503ACD151BE1251B00A7E945 /* NSString+MHKExts.m */,
+				503ACD171BE259D200A7E945 /* NSData+MHKExts.h */,
+				503ACD181BE259D200A7E945 /* NSData+MHKExts.m */,
 			);
 			path = foundation;
 			sourceTree = "<group>";
@@ -241,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				503ACD161BE1251B00A7E945 /* NSString+MHKExts.m in Sources */,
+				503ACD191BE259D200A7E945 /* NSData+MHKExts.m in Sources */,
 				503ACCF31BE121D300A7E945 /* ViewController.m in Sources */,
 				503ACCF01BE121D300A7E945 /* AppDelegate.m in Sources */,
 				503ACCED1BE121D200A7E945 /* main.m in Sources */,

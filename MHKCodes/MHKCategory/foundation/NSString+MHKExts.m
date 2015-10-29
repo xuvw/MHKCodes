@@ -77,6 +77,19 @@
             ];
 }
 
+- (NSString *)sha1{
+    const char *cstr = [self UTF8String];
+    //使用对应的CC_SHA1,CC_SHA256,CC_SHA384,CC_SHA512的长度分别是20,32,48,64
+    unsigned char digest[CC_SHA1_DIGEST_LENGTH];
+    //使用对应的CC_SHA256,CC_SHA384,CC_SHA512
+    CC_SHA1(cstr,  (CC_LONG)strlen(cstr), digest);
+    NSMutableString* result = [NSMutableString stringWithCapacity:CC_SHA1_DIGEST_LENGTH * 2];
+    for(int i = 0; i < CC_SHA1_DIGEST_LENGTH; i++) {
+        [result appendFormat:@"%02x", digest[i]];
+    }
+    return result;
+}
+
 //见：GTMBase64
 - (NSString *)base64Encode{
     NSData* originData = [self dataUsingEncoding:NSASCIIStringEncoding];
