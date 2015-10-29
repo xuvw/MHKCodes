@@ -16,6 +16,8 @@
 		503ACD111BE122C100A7E945 /* Memo in Resources */ = {isa = PBXBuildFile; fileRef = 503ACD101BE122C100A7E945 /* Memo */; };
 		503ACD161BE1251B00A7E945 /* NSString+MHKExts.m in Sources */ = {isa = PBXBuildFile; fileRef = 503ACD151BE1251B00A7E945 /* NSString+MHKExts.m */; };
 		503ACD191BE259D200A7E945 /* NSData+MHKExts.m in Sources */ = {isa = PBXBuildFile; fileRef = 503ACD181BE259D200A7E945 /* NSData+MHKExts.m */; };
+		503ACD1D1BE261FE00A7E945 /* UIScrollView+MHKExts.m in Sources */ = {isa = PBXBuildFile; fileRef = 503ACD1C1BE261FE00A7E945 /* UIScrollView+MHKExts.m */; };
+		503ACD201BE2627B00A7E945 /* UIView+MHKExts.m in Sources */ = {isa = PBXBuildFile; fileRef = 503ACD1F1BE2627B00A7E945 /* UIView+MHKExts.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,10 @@
 		503ACD151BE1251B00A7E945 /* NSString+MHKExts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MHKExts.m"; sourceTree = "<group>"; };
 		503ACD171BE259D200A7E945 /* NSData+MHKExts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+MHKExts.h"; sourceTree = "<group>"; };
 		503ACD181BE259D200A7E945 /* NSData+MHKExts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+MHKExts.m"; sourceTree = "<group>"; };
+		503ACD1B1BE261FE00A7E945 /* UIScrollView+MHKExts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+MHKExts.h"; sourceTree = "<group>"; };
+		503ACD1C1BE261FE00A7E945 /* UIScrollView+MHKExts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MHKExts.m"; sourceTree = "<group>"; };
+		503ACD1E1BE2627B00A7E945 /* UIView+MHKExts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MHKExts.h"; sourceTree = "<group>"; };
+		503ACD1F1BE2627B00A7E945 /* UIView+MHKExts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MHKExts.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +135,7 @@
 		503ACD121BE1247500A7E945 /* MHKCategory */ = {
 			isa = PBXGroup;
 			children = (
+				503ACD1A1BE261D800A7E945 /* UIKit */,
 				503ACD131BE124DB00A7E945 /* foundation */,
 			);
 			path = MHKCategory;
@@ -143,6 +150,17 @@
 				503ACD181BE259D200A7E945 /* NSData+MHKExts.m */,
 			);
 			path = foundation;
+			sourceTree = "<group>";
+		};
+		503ACD1A1BE261D800A7E945 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				503ACD1B1BE261FE00A7E945 /* UIScrollView+MHKExts.h */,
+				503ACD1C1BE261FE00A7E945 /* UIScrollView+MHKExts.m */,
+				503ACD1E1BE2627B00A7E945 /* UIView+MHKExts.h */,
+				503ACD1F1BE2627B00A7E945 /* UIView+MHKExts.m */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,7 +266,9 @@
 				503ACD161BE1251B00A7E945 /* NSString+MHKExts.m in Sources */,
 				503ACD191BE259D200A7E945 /* NSData+MHKExts.m in Sources */,
 				503ACCF31BE121D300A7E945 /* ViewController.m in Sources */,
+				503ACD201BE2627B00A7E945 /* UIView+MHKExts.m in Sources */,
 				503ACCF01BE121D300A7E945 /* AppDelegate.m in Sources */,
+				503ACD1D1BE261FE00A7E945 /* UIScrollView+MHKExts.m in Sources */,
 				503ACCED1BE121D200A7E945 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
